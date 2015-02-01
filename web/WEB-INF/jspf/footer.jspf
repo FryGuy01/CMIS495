@@ -1,0 +1,14 @@
+
+<div id="footer">
+    <br>
+    <hr id="footerDivider">
+    <p id="footerText" class="legalese">
+        <a href="<c:url value='#'/>"><fmt:message key="privacy" /></a>
+        &nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;
+        <a href="<c:url value='#'/>"><fmt:message key="contact" /></a>
+        &nbsp;&nbsp;&copy;&nbsp;&nbsp;&nbsp;
+        2015 The X Store</p>
+</div>
+</div>
+</body>
+</html>
