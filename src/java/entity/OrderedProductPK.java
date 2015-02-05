@@ -25,37 +25,31 @@ public class OrderedProductPK implements Serializable {
     private int productId;
 
     // no-arg constructor
-
     public OrderedProductPK() {
     }
 
     //Contructor for OrderedProductPK
-
     public OrderedProductPK(int customerOrderId, int productId) {
         this.customerOrderId = customerOrderId;
         this.productId = productId;
     }
 
     //method (accessor method) that returns customerOrderId
-
     public int getCustomerOrderId() {
         return customerOrderId;
     }
 
     //is a void method (mutator method) that allows for the driver to change the customerOrderId
-
     public void setCustomerOrderId(int customerOrderId) {
         this.customerOrderId = customerOrderId;
     }
 
     //method (accessor method) that returns productId
-
     public int getProductId() {
         return productId;
     }
 
     //is a void method (mutator method) that allows for the driver to change the productId
-
     public void setProductId(int productId) {
         this.productId = productId;
     }
@@ -82,7 +76,6 @@ public class OrderedProductPK implements Serializable {
     }
 
     //method that returns formatted information
-
     @Override
     public String toString() {
         return "entity.OrderedProductPK[customerOrderId=" + customerOrderId + ", productId=" + productId + "]";

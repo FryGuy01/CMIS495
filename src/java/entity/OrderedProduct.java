@@ -43,73 +43,61 @@ public class OrderedProduct implements Serializable {
     private CustomerOrder customerOrder;
 
     // no-arg constructor
-
     public OrderedProduct() {
     }
 
     //Contructor for OrderedProduct
-
     public OrderedProduct(OrderedProductPK oProductPK) {
         this.oProductPK = oProductPK;
     }
 
     //Contructor for OrderedProduct
-
     public OrderedProduct(OrderedProductPK oProductPK, short quantity) {
         this.oProductPK = oProductPK;
         this.quantity = quantity;
     }
 
     //Contructor for OrderedProduct
-
     public OrderedProduct(int customerOrderId, int productId) {
         this.oProductPK = new OrderedProductPK(customerOrderId, productId);
     }
 
     //method (accessor method) that returns ordered Product
-
     public OrderedProductPK getOPPK() {
         return oProductPK;
     }
 
     //is a void method (mutator method) that allows for the driver to change the orderedProduct
-
     public void setOrderedProductPK(OrderedProductPK oProductPK) {
         this.oProductPK = oProductPK;
     }
 
     //method (accessor method) that returns quantity 
-
     public short getQuantity() {
         return quantity;
     }
 
     //is a void method (mutator method) that allows for the driver to change the quantity
-
     public void setQuantity(short quantity) {
         this.quantity = quantity;
     }
 
     //method (accessor method) that returns Product object
-
     public Product getProduct() {
         return product;
     }
 
     //is a void method (mutator method) that allows for the driver to change the Product object
-
     public void setProduct(Product product) {
         this.product = product;
     }
 
     //method (accessor method) that returns customerOrder object
-
     public CustomerOrder getCustomerOrder() {
         return customerOrder;
     }
 
     //is a void method (mutator method) that allows for the driver to change the CustomerOrder object
-
     public void setCustomerOrder(CustomerOrder customerOrder) {
         this.customerOrder = customerOrder;
     }
@@ -132,7 +120,6 @@ public class OrderedProduct implements Serializable {
     }
 
     //method that returns formatted information
-
     @Override
     public String toString() {
         return "entity.OrderedProduct[oProductPK=" + oProductPK + "]";

@@ -76,18 +76,15 @@ public class Customer implements Serializable {
     private Collection<CustomerOrder> customerOrderCollection;
 
     // no-arg constructor
-
     public Customer() {
     }
 
     //Contructor for Customer
-
     public Customer(Integer id) {
         this.id = id;
     }
 
     //Contructor for Customer
-
     public Customer(Integer id, String name, String email, String phone, String address, String city, String stateRegion, String country, String zip, String cc) {
         this.id = id;
         this.name = name;
@@ -102,134 +99,112 @@ public class Customer implements Serializable {
     }
 
     //method (accessor method) that returns id
-
     public Integer getId() {
         return id;
     }
 
     //is a void method (mutator method) that allows for the driver to change the id
-
     public void setId(Integer id) {
 
         this.id = id;
     }
 
     //method (accessor method) that returns name
-
     public String getName() {
         return name;
     }
 
     //is a void method (mutator method) that allows for the driver to change the name
-
     public void setName(String name) {
         this.name = name;
     }
 
     //method (accessor method) that returns address
-
     public String getAddress() {
         return address;
     }
 
     //is a void method (mutator method) that allows for the driver to change the address
-
     public void setAddress(String address) {
         this.address = address;
     }
 
     //method (accessor method) that returns city
-
     public String getCity() {
         return city;
     }
 
     //is a void method (mutator method) that allows for the driver to change the ciy
-
     public void setCity(String city) {
         this.city = city;
     }
 
     //method (accessor method) that returns state/region
-
     public String getStateRegion() {
         return stateRegion;
     }
 
     //is a void method (mutator method) that allows for the driver to change the state/region
-
     public void setStateRegion(String stateRegion) {
         this.stateRegion = stateRegion;
     }
 
     //method (accessor method) that returns country
-
     public String getCountry() {
         return country;
     }
 
     //is a void method (mutator method) that allows for the driver to change the country
-
     public void setCountry(String country) {
         this.country = country;
     }
 
     //method (accessor method) that returns zip code
-
     public String getZipCode() {
         return zip;
     }
 
     //is a void method (mutator method) that allows for the driver to change the zip code
-
     public void setZipCode(String zip) {
         this.zip = zip;
     }
 
     //method (accessor method) that returns phone number
-
     public String getPhone() {
         return phone;
     }
 
     //is a void method (mutator method) that allows for the driver to change the phone number
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
     //method (accessor method) that returns email address
-
     public String getEmail() {
         return email;
     }
 
     //is a void method (mutator method) that allows for the driver to change the email address
-
     public void setEmail(String email) {
         this.email = email;
     }
 
     //method (accessor method) that returns credit card number
-
     public String getCreditCardNum() {
         return cc;
     }
 
     //is a void method (mutator method) that allows for the driver to change the credit card number
-
     public void setCreditCardNum(String cc) {
         this.cc = cc;
     }
 
     //method (accessor method) that returns customer Order Collection
-
     public Collection<CustomerOrder> getCustomerOrderCollection() {
         return customerOrderCollection;
     }
 
     //is a void method (mutator method) that allows for the driver to change the customer Order Collection
-
     public void setCustomerOrderCollection(Collection<CustomerOrder> customerOrderCollection) {
         this.customerOrderCollection = customerOrderCollection;
     }
@@ -252,7 +227,6 @@ public class Customer implements Serializable {
     }
 
     //method that returns formatted information
-
     @Override
     public String toString() {
         return "entity.Customer[id=" + id + "]";

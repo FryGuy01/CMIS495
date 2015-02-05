@@ -62,18 +62,15 @@ public class Product implements Serializable {
     private Collection<OrderedProduct> opc;
 
     // no-arg constructor
-
     public Product() {
     }
 
     //Contructor for Product
-
     public Product(Integer id) {
         this.id = id;
     }
 
     //Contructor for Product
-
     public Product(Integer id, String name, BigDecimal price, Date lastUpdate) {
         this.id = id;
         this.name = name;
@@ -82,73 +79,61 @@ public class Product implements Serializable {
     }
 
     //method (accessor method) that returns id
-
     public Integer getId() {
         return id;
     }
 
     //is a void method (mutator method) that allows for the driver to change the id
-
     public void setId(Integer id) {
         this.id = id;
     }
 
     //method (accessor method) that returns name
-
     public String getName() {
         return name;
     }
 
     //is a void method (mutator method) that allows for the driver to change the name
-
     public void setName(String name) {
         this.name = name;
     }
 
     //method (accessor method) that returns price
-
     public BigDecimal getPrice() {
         return price;
     }
 
     //is a void method (mutator method) that allows for the driver to change the price
-
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
     //method (accessor method) that returns date last updated
-
     public Date getLastUpdate() {
         return lastUpdate;
     }
 
     //is a void method (mutator method) that allows for the driver to change the date last updated
-
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
     }
 
     //method (accessor method) that returns a Category Object
-
     public Category getCategory() {
         return category;
     }
 
     //is a void method (mutator method) that allows for the driver to change the Category
-
     public void setCategory(Category category) {
         this.category = category;
     }
 
     //method (accessor method) that returns a Ordered Product Collection
-
     public Collection<OrderedProduct> getOPC() {
         return opc;
     }
 
     //is a void method (mutator method) that allows for the driver to change the Ordered Product Collection
-
     public void setopc(Collection<OrderedProduct> opc) {
         this.opc = opc;
     }
@@ -174,7 +159,6 @@ public class Product implements Serializable {
     }
 
     //method that returns formatted information
-
     @Override
     public String toString() {
         return "entity.Product[id=" + id + "]";

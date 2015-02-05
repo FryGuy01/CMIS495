@@ -181,7 +181,7 @@
                 </div>
 
                 <a href="<c:url value='/'/>">
-                    <img src="/WebStore/img/logo.png" id="logo" alt="X Store logo">
+                    <img src="/WebStore/img/logo.png" height="42" width="42" id="logo" alt="X Store logo">
                 </a>
 
                 <img src="/WebStore/img/logoText.png" id="logoText" alt="The X Store">

@@ -63,18 +63,15 @@ public class CustomerOrder implements Serializable {
     private Customer customer;
 
     // no-arg constructor
-
     public CustomerOrder() {
     }
 
     //Contructor for CustomerOrder
-
     public CustomerOrder(Integer id) {
         this.id = id;
     }
 
     //Contructor for CustomerOrder
-
     public CustomerOrder(Integer id, BigDecimal amount, Date dateCreated, int confirmationNumber) {
         this.id = id;
         this.amount = amount;
@@ -83,73 +80,61 @@ public class CustomerOrder implements Serializable {
     }
 
     //method (accessor method) that returns id
-
     public Integer getId() {
         return id;
     }
 
     //is a void method (mutator method) that allows for the driver to change the quantity
-
     public void setId(Integer id) {
         this.id = id;
     }
 
     //method (accessor method) that returns dollar amount
-
     public BigDecimal getAmount() {
         return amount;
     }
 
     //is a void method (mutator method) that allows for the driver to change the dollar amount
-
     public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
     //method (accessor method) that returns dateCreated
-
     public Date getDateCreated() {
         return dateCreated;
     }
 
     //is a void method (mutator method) that allows for the driver to change the dateCreated
-
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
 
     //method (accessor method) that returns confirmation number
-
     public int getConfirmationNumber() {
         return confirmationNumber;
     }
 
     //is a void method (mutator method) that allows for the driver to change the confirmation number
-
     public void setConfirmationNumber(int confirmationNumber) {
         this.confirmationNumber = confirmationNumber;
     }
 
     //method (accessor method) that returns ordered Product Collection
-
     public Collection<OrderedProduct> getOPC() {
         return opc;
     }
 
     //is a void method (mutator method) that allows for the driver to change the ordered Product Collection
-
     public void setopc(Collection<OrderedProduct> opc) {
         this.opc = opc;
     }
 
     //method (accessor method) that returns Customer object
-
     public Customer getCustomer() {
         return customer;
     }
 
     //is a void method (mutator method) that allows for the driver to change the Customer object
-
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
@@ -175,7 +160,6 @@ public class CustomerOrder implements Serializable {
     }
 
     //method that returns formatted information
-
     @Override
     public String toString() {
         return "entity.CustomerOrder[id=" + id + "]";
