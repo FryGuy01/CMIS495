@@ -21,7 +21,7 @@ public class Cart {
 
     //Contructor for Cart
     public Cart() {
-        items = new ArrayList<CartItems>();
+        items = new ArrayList<>();
         numberOfItems = 0;
         total = 0;
     }
@@ -36,7 +36,7 @@ public class Cart {
 
         for (CartItems scItem : items) {
 
-            if (scItem.getProduct().getId() == product.getId()) {
+            if (Objects.equals(scItem.getProduct().getId(), product.getId())) {
 
                 newItem = false;
                 scItem.incrementQuantity();
@@ -70,7 +70,7 @@ public class Cart {
 
             for (CartItems scItem : items) {
 
-                if (scItem.getProduct().getId() == product.getId()) {
+                if (Objects.equals(scItem.getProduct().getId(), product.getId())) {
 
                     if (qty != 0) {
                         // set item quantity to new value
