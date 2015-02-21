@@ -41,7 +41,7 @@
 
             <tr class="${((iter.index % 2) == 0) ? 'lightBlue' : 'white'}">
                 <td>
-                    <img src="${initParam.productImagePath}${product.name}.png"
+                    <img src="${initParam.productImagePath}${product.name}.jpg"
                          alt="<fmt:message key='${product.name}'/>">
                 </td>
 

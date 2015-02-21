@@ -21,7 +21,9 @@
     </head>
 
     <body>
-        <div id="main">
+        <div id="wrapper">
+        
+            <div id="main">
             <div id="header">
                 <div id="widgetBar">
 
@@ -181,8 +183,14 @@
                 </div>
 
                 <a href="<c:url value='/'/>">
-                    <img src="/WebStore/img/logo.png" height="100" width="100" id="logo" alt="X Store logo">
+                    <img src="/WebStore/img/logo.png" height="175" width="175" id="logo" alt="X Store logo">
                 </a>
 
-                <img src="/WebStore/img/logoText.png" id="logoText" alt="The X Store">
+                <div id="nav" align="center">
+                    <a href="#">Home</a>
+                    <a href="#">Company Info</a>
+                    <a href="#">Store</a>
+                    <a href="#">Contact</a>
+                </div> 
+
             </div>

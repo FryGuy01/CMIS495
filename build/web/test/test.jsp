@@ -13,7 +13,7 @@
         <h2>data from category:</h2>
 
         <sql:query var="result" dataSource="jdbc/finalbean">
-            SELECT * FROM category
+            SELECT * FROM product ORDER BY price DESC
         </sql:query>
 
         <table border="1">
